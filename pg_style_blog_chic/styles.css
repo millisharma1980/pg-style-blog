@@ -1,0 +1,48 @@
+/* Minimal Paul Graham–style vibe with a chic landing: narrow column, serif, blue links, tasteful images */
+:root { --maxw: 720px; }
+html { font-size: 18px; }
+body { font-family: Georgia, "Times New Roman", Times, serif; color: #111; background: #fff; margin: 0; }
+.wrapper { max-width: var(--maxw); margin: 2rem auto; padding: 0 1rem; }
+header h1 { font-size: 1.8rem; font-weight: 700; margin: 0; }
+nav { margin: .4rem 0 1rem; font-size: .95rem; }
+nav a { color: #06c; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #ddd; margin: 1rem 0; }
+a { color: #06c; }
+a:hover { text-decoration: underline; }
+.small { font-size: .9rem; color: #555; }
+footer { margin-top: 2rem; font-size: .9rem; color: #555; }
+
+/* Landing page visuals */
+.hero {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 0 1.25rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+.essay-list { margin: 0; padding: 0; }
+.essay-list ul { list-style: none; padding: 0; margin: 0; }
+.essay-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: .8rem;
+  align-items: center;
+  padding: .5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.essay-item:last-child { border-bottom: none; }
+.thumb {
+  width: 72px; height: 72px; border-radius: 8px; object-fit: cover;
+  box-shadow: 0 1px 8px rgba(0,0,0,.06);
+}
+.item-meta { font-size: .95rem; }
+.item-title { font-weight: 700; }
+.date { color: #444; font-size: .92rem; white-space: nowrap; }
+
+/* Essay pages */
+h1.title { font-size: 1.8rem; margin: 0; font-weight: 700; }
+p.when { margin: .4rem 0 1rem; color: #555; }
+main p { margin: 0 0 1rem; }
+blockquote { margin: 1rem 1.2rem; padding-left: .8rem; border-left: 3px solid #ddd; }
+nav.pager { margin-top: 2rem; }
